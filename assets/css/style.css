@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#lateralMenu{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(164, 31, 38);
+  position:relative;
+  top: 100;
+  z-index: 9999;
+}
+#lateralMenu:hover{
+  background-color: rgb(120, 21, 26);
+}
+#tabIcon{
+  font-size: 30;
+  padding-left: 5;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#tabIcon:hover{
+  color: rgb(111, 96, 99)
+}
+#sidebar {
+  background-color: #222;
+  z-index: 9999;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 900
+}
