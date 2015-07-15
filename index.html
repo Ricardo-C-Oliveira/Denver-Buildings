@@ -4,12 +4,12 @@
   <title>Denver Buildings</title>
   <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
-
+  <meta charset="utf-8">
   <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-  <script src="./assets/js/reveal.js"></script>
+  <script src="./assets/js/sliderReveal.js"></script>
 
   <link href='./assets/css/style.css' rel='stylesheet' />
 
@@ -20,8 +20,15 @@
     <a id="tabIcon"> &#9776</a>
   </div>
   <div id="sidebar">
-<h2>Hey there!</h2>
-
+    <div id="sidebarContent">
+      <h2>Denver Buildings</h2>
+      <p>
+        Each building in a city has its own story, and collectively they create the city’s own story. Walking by a given building we may wonder what that building is for, what is it real reason to exist. Of course sometimes it is easy to “guess” the building’s
+        use, but there buildings that are truly mysteries. This map is meant to help on this quest to uncover the mystery behind Denver’s buildings, and ultimately create the city’s own story. Let’s use opendata from <a href="http://data.denvergov.org/" target="_blank">Denver’s Open Catalog</a> to visualize
+        each building’s use.
+      </p>
+      <input type='text' oninput='geocodeThis()' id='search' placeholder='geocode here...'>
+    </div>
   </div>
   <div id="map">
     <script src="./script.js"></script>

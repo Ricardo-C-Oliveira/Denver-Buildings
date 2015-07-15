@@ -2,31 +2,48 @@ body {
   margin: 0;
   padding: 0;
 }
-
-#lateralMenu{
+#lateralMenu {
   width: 40px;
   height: 40px;
   background-color: rgb(164, 31, 38);
-  position:relative;
+  position: relative;
   top: 100;
   z-index: 9999;
 }
-#lateralMenu:hover{
-  background-color: rgb(120, 21, 26);
+#lateralMenu:hover {
+  background-color: #78151a;
 }
-#tabIcon{
+#tabIcon {
   font-size: 30;
   padding-left: 5;
   color: black;
   text-decoration: none;
   cursor: pointer;
+  text-shadow: rgb(148, 28, 34) 1px 1px, rgb(148, 28, 34) 2px 2px, rgb(148, 28, 34) 3px 3px, rgb(148, 28, 34) 4px 4px, rgb(148, 28, 34) 5px 5px, rgb(148, 28, 34) 6px 6px, rgb(148, 28, 34) 7px 7px, rgb(148, 28, 34) 8px 8px;
+  background-color: rgb(164, 31, 38);
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 2px;
 }
-#tabIcon:hover{
-  color: rgb(111, 96, 99)
+#tabIcon:hover {
+  color: rgb(111, 96, 99);
+  text-shadow: rgb(108, 19, 23) 1px 1px, rgb(108, 19, 23) 2px 2px, rgb(108, 19, 23) 3px 3px, rgb(108, 19, 23) 4px 4px, rgb(110, 19, 23) 5px 5px, rgb(110, 19, 23) 6px 6px, rgb(110, 19, 23) 7px 7px, rgb(110, 19, 23) 8px 8px;
+  background-color: rgb(120, 21, 26);
 }
 #sidebar {
-  background-color: #222;
+  background-color: #c0392b;
   z-index: 9999;
+}
+#sidebarContent {
+  padding-left: 10px;
+  color: #ffffff;
+}
+a {
+  color: #ffffff;
+  font-weight: bold;
+}
+input{
+  background-color: rgb(166, 81, 81);
 }
 #map {
   position: absolute;
