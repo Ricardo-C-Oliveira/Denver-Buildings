@@ -14,14 +14,11 @@ var map = L.map('map', {
 var layer = L.mapbox.tileLayer('darkvengers.fadeb801').addTo(map);
 
 //custom geocoding control
+var geocoder = L.mapbox.geocoder('mapbox.places');
 function showMap(err, data) {
   // The geocoder can return an area, like a city, or a
   // point, like an address. Here we handle both cases,
   // by fitting the map bounds to an area or zooming to a point.
-  if (!map) {
-    map = L.mapbox.map('map', 'examples.map-h67hf2ic');
-  }
-
   if (data.lbounds) {
     map.fitBounds(data.lbounds);
   } else if (data.latlng) {
@@ -29,13 +26,13 @@ function showMap(err, data) {
   }
 }
 
-
+$("#geocodeBtn").click(
 function geocodeThis() {
-  var text = document.getElementById('search').value;
+  var text =  $('#search').val();
   if (text.length >= 5) {
     geocoder.query(text, showMap);
   }
-}
+});
 
 //collapse and show sidebar
 $('#sidebarLeft').slideReveal({
@@ -50,3 +47,8 @@ $('#sidebarRight').slideReveal({
   push: false,
   position: "right",
 });
+
+//tooltip opt-in
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip()
+})
