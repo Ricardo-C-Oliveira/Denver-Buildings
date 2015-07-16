@@ -37,16 +37,16 @@ function geocodeThis() {
   }
 }
 
-  //collapse and show sidebar
-  $('#sidebarLeft').slideReveal({
-    trigger: $("#toggleLeft"),
-    width: 300,
-    push: false,
-  });
+//collapse and show sidebar
+$('#sidebarLeft').slideReveal({
+  trigger: $("#toggleLeft"),
+  width: 300,
+  push: false,
+});
 
-  $('#sidebarRight').slideReveal({
-    trigger: $("#toggleRight"),
-    width: 250,
-    push: false,
-    position: "right",
-  });
+$('#sidebarRight').slideReveal({
+  trigger: $("#toggleRight"),
+  width: 250,
+  push: false,
+  position: "right",
+});
