@@ -16,11 +16,12 @@
 </head>
 
 <body>
-  <div id="lateralMenu">
-    <a id="tabIcon"> &#9776</a>
-  </div>
-  <div id="sidebar">
-    <div id="sidebarContent">
+
+  <div id="sidebarLeft">
+    <div id="toggleLeft">
+      <a id="tabIcon"> &#9776</a>
+    </div>
+    <div class="sidebarContent">
       <h2>Denver Buildings</h2>
       <p>
         Each building in a city has its own story, and collectively they create the city’s own story. Walking by a given building we may wonder what that building is for, what is it real reason to exist. Of course sometimes it is easy to “guess” the building’s
@@ -28,6 +29,21 @@
         each building’s use.
       </p>
       <input type='text' oninput='geocodeThis()' id='search' placeholder='geocode here...'>
+    </div>
+  </div>
+  <div id="sidebarRight">
+    <div id="toggleRight">
+      <a id="tabIcon"> &#9776</a>
+    </div>
+    <div class="sidebarContent">
+      <div class="header">
+      <h2>Legend</h2>
+      </div>
+      <p>
+        Each building in a city has its own story, and collectively they create the city’s own story. Walking by a given building we may wonder what that building is for, what is it real reason to exist. Of course sometimes it is easy to “guess” the building’s
+        use, but there buildings that are truly mysteries. This map is meant to help on this quest to uncover the mystery behind Denver’s buildings, and ultimately create the city’s own story. Let’s use opendata from <a href="http://data.denvergov.org/" target="_blank">Denver’s Open Catalog</a> to visualize
+        each building’s use.
+      </p>
     </div>
   </div>
   <div id="map">
